@@ -1,6 +1,13 @@
 # A Generative Approach for Production-Aware Industrial Network Traffic Modeling
 Pretrained generated models for production-aware industrial network traffic modeling
 
+## Contribution
+we investigate the network traffic data generated from a laser cutting machine deployed in a Trumpf factory in Germany. We evaluate the data and model the network traffic as a production state dependent stochastic process in two steps: first, we model the production process as a multi-state semi Markov process, then we learn the conditional distributions of the production state dependent packet interarrival time and packet size with different generative models, including variational autoencoder (VAE), conditional variational autoencoder (CVAE), and generative adversarial network (GAN).
+
+In this repository, we publish the pretrained models for the pretrained industrial network traffic. 
+
+[Note] The model is under an external release process within the company. We will upload as soon as they are approved to be published. 
+
 ![](Distribution_sojourn_time.png)
 
 ## Dependencies
