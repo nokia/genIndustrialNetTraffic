@@ -6,7 +6,7 @@ we investigate the network traffic data generated from a laser cutting machine d
 
 In this repository, we publish the pretrained models for the pretrained industrial network traffic. 
 
-[Note] The model is under an external release process within the company. We will upload as soon as they are approved to be published. 
+![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `The model is under an external release process within the company. We will upload as soon as they are approved to be published.`
 
 ![](Distribution_sojourn_time.png)
 
