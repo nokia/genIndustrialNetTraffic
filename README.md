@@ -19,4 +19,4 @@ We have used the following software versions:
   - pytorch (1.10.1)
   
 ## Launching scripts
-The complete evaluation can be launched through the `gen_traffic.py` script.
+The traffic generation can be launched through the `gen_traffic.py` script.
