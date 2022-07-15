@@ -1,6 +1,8 @@
 # A Generative Approach for Production-Aware Industrial Network Traffic Modeling
 Pretrained generated models for production-aware industrial network traffic modeling
 
+![](Distribution_sojourn_time.png)
+
 ## Dependencies
 We have used the following software versions:
 - python (3.8)
