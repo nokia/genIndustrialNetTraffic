@@ -20,3 +20,7 @@ We have used the following software versions:
   
 ## Launching scripts
 The traffic generation can be launched through the `gen_traffic.py` script.
+
+## License
+This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.
+© 2022 Nokia
