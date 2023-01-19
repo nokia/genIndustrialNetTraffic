@@ -6,8 +6,6 @@ we investigate the network traffic data generated from a laser cutting machine d
 
 In this repository, we publish the pretrained models for the industrial network traffic. 
 
-![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `The model is under an external release process within the company. We will upload as soon as they are approved to be published.`
-
 ![](Distribution_sojourn_time.png)
 
 ## Dependencies
@@ -19,8 +17,30 @@ We have used the following software versions:
   - pytorch (1.10.1)
   
 ## Launching scripts
-The traffic generation can be launched through the `gen_traffic.py` script.
+
+The most easy way to launch the scripts is to run `tox -e run` in the `generative_models` directory in a new conda environment. 
+
+Dependencies are collected to the [requirements.txt](generative_models\requirements.txt) file. 
+The traffic generation can be launched through the `main.py` script. 
+
+`saved_model*` directories are the pre-trained models that are used for generating the distributions. They are loaded in
+the main.py for generating our distributions and there is no need to change or modify them.
+
+## Modifying the configuration
+
+This can be achieved by chanding the code of the script. 
+
+* `model` variable in line 25 selects the model used, must be VAE, CVAE or GAN
+* `x_dim` variable in line 29 selects the dimension of the output. 1 means only distribution of interarrival time
+  between packets, 2 means joint distribution of interarrival time and packet size
+* Line 85 is the output, which is a dictionary which has as a key the industrial state and as value the list of interarrival time and/or packet size
+
+## Example output
+
+Running the script should result in similar diagrams than [1D_distribution_CVAE.png](generative_models\1D_distribution_CVAE.png), 
+[1D_distribution_GAN.png](generative_models\1D_distribution_GAN.png) or [1D_distribution_VAE.png](generative_models\1D_distribution_VAE.png).
 
 ## License
+
 This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.
 © 2022 Nokia
